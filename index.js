@@ -18,7 +18,7 @@ function displayMenuItems(menu) {
         // Append the category element to the menu container
         menuContainer.appendChild(categoryElement);
         // Create an element to represent a list of items
-
+        const itemsList = document.createElement('ul');
         // Append a list of items element to the menu container
 
         // Loop through the items in the category and create list items
