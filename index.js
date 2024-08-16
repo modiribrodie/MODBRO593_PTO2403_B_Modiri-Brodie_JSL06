@@ -22,9 +22,9 @@ function displayMenuItems(menu) {
         // Append a list of items element to the menu container
         menuContainer.appendChild(itemsList);
         // Loop through the items in the category and create list items
-
+        menu[category].forEach(item => {
             // Create a list item element
-
+            const listItem = document.createElement('li');
             // Set the text content of the list item element to the item name
 
             // Attach a click event listener to the list item to add it to the order
