@@ -30,7 +30,9 @@ function displayMenuItems(menu) {
             // Attach a click event listener to the list item to add it to the order
             listItem.addEventListener('click', () => addToOrder(item));
             // Append the list item to the list of items
-
+            itemsList.appendChild(listItem);
+        });
+    }
             
 }
 
