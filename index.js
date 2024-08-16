@@ -10,7 +10,7 @@ function displayMenuItems(menu) {
     // Get the menu container element from the HTML
     const menuContainer = document.getElementById('menuContainer');
     // Loop through each category and its items in the menu object
-
+    for (const category in menu) {
         // Create an element to represent the category
 
         // Set the text content of the category element to the category name
