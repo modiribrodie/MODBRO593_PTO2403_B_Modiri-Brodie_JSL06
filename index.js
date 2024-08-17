@@ -60,7 +60,9 @@ function initMenuSystem(menu) {
     const orderItemsList = document.getElementById('orderItemsList');
     const orderTotalElement = document.getElementById('orderTotal');
     // Call the function to display menu items
-}menu.forEach(item => {
+}
+menu.forEach(item => {
+    const menuItem = document.createElement('button');
 
 // Start the menu system by calling the init function
 initMenuSystem(menu);
