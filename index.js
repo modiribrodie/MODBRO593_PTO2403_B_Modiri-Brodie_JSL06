@@ -63,6 +63,7 @@ function initMenuSystem(menu) {
 }
 menu.forEach(item => {
     const menuItem = document.createElement('button');
-
+    menuItem.textContent = item.name;
+    
 // Start the menu system by calling the init function
 initMenuSystem(menu);
