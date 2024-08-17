@@ -48,6 +48,9 @@ const listItem = document.createElement('li');
     // Append the list item to the order items list
     orderItemsList.appendChild(listItem);
     // Calculate and update the total price
+    const currentTotal = parseFloat(orderTotalElement.textContent) || 0;
+    const newTotal = currentTotal + getItemPrice(itemName);
+    orderTotalElement.textContent = newTotal.toFixed(2); // Update total with two decimal places
 
     // Update the text content of the order total element with the new total
 }
