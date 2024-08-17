@@ -44,9 +44,9 @@ const listItem = document.createElement('li');
     // Create a list item for the order
 
     // Set the text content of the list item to the item name
-
+    listItem.textContent = itemName;
     // Append the list item to the order items list
-
+    orderItemsList.appendChild(listItem);
     // Calculate and update the total price
 
     // Update the text content of the order total element with the new total
