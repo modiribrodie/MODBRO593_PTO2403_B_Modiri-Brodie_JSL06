@@ -64,6 +64,9 @@ function initMenuSystem(menu) {
 menu.forEach(item => {
     const menuItem = document.createElement('button');
     menuItem.textContent = item.name;
-    
+    menuItem.onclick = () => addToOrder(item.name, orderItemsList, orderTotalElement);
+    document.getElementById('menuContainer').appendChild(menuItem);
+});
+
 // Start the menu system by calling the init function
 initMenuSystem(menu);
