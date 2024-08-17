@@ -12,7 +12,7 @@ function displayMenuItems(menu) {
     // Loop through each category and its items in the menu object
     for (const category in menu) {
         // Create an element to represent the category
-        const categoryElement = document.createElement('h2');
+        const categoryElement = document.createElement('h3');
         // Set the text content of the category element to the category name
         categoryElement.textContent = category;
         // Append the category element to the menu container
@@ -70,3 +70,9 @@ menu.forEach(item => {
 
 // Start the menu system by calling the init function
 initMenuSystem(menu);
+
+const menu = [
+{ name: '', price: 100.00 },
+{ name: '', price: 460.00 },
+{ name: '', price: 280.00 },
+];
